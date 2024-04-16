@@ -1,0 +1,140 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.activityBar.location": "top",
+    "workbench.statusBar.visible": true,
+    "workbench.colorTheme": "Serika Dark",
+    "editor.glyphMargin": true,
+    "editor.lineNumbers": "relative",
+    "editor.suggestSelection": "first",
+    "editor.minimap.enabled": false,
+    "editor.codeActionsOnSave": {},
+    "editor.fontSize": 15,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "diffEditor.ignoreTrimWhitespace": false,
+  
+    "[go]": {
+      "editor.insertSpaces": false,
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "golang.go"
+    },
+    "go.lintOnSave": "package",
+    "go.lintTool": "staticcheck",
+    "gopls": {
+      "formatting.gofumpt": true
+    },
+    "go.toolsManagement.autoUpdate": true,
+  
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+  
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+  
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.formatOnType": true
+    },
+    "python.autoComplete.extraPaths": [],
+    "python.analysis.extraPaths": [],
+    
+    "security.workspace.trust.untrustedFiles": "open",
+    "jest.autoRun": { "watch": false },
+    "jest.autoRevealOutput": "off",
+  
+    // vim
+    "vim.leader": "<Space>",
+    "vim.hlsearch": true,
+    "vim.foldfix": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<space>"],
+        "commands": ["whichkey.show"]
+      },
+      {
+        "before": ["leader", "e"],
+        "commands": ["workbench.action.toggleSidebarVisibility"]
+      },
+      // NAVIGATION
+      // switch b/w buffers
+      { "before": ["<S-h>"], "commands": [":bprevious"] },
+      { "before": ["<S-l>"], "commands": [":bnext"] },
+  
+      // splits
+      { "before": ["s", "v"], "commands": [":vsplit"] },
+      { "before": ["s", "s"], "commands": [":split"] },
+  
+      // panes
+      {
+        "before": ["leader", "h"],
+        "commands": ["workbench.action.focusLeftGroup"]
+      },
+      {
+        "before": ["s", "h"],
+        "commands": ["workbench.action.focusLeftGroup"]
+      },
+      {
+        "before": ["leader", "j"],
+        "commands": ["workbench.action.focusBelowGroup"]
+      },
+      {
+        "before": ["leader", "k"],
+        "commands": ["workbench.action.focusAboveGroup"]
+      },
+      {
+        "before": ["leader", "l"],
+        "commands": ["workbench.action.focusRightGroup"]
+      },
+      {
+        "before": ["s", "l"],
+        "commands": ["workbench.action.focusRightGroup"]
+      },
+      // NICE TO HAVE
+      { "before": ["leader", "w"], "commands": [":w!"] },
+      { "before": ["leader", "q"], "commands": [":q!"] },
+      { "before": ["leader", "x"], "commands": [":x!"] },
+      {
+        "before": ["[", "d"],
+        "commands": ["editor.action.marker.prev"]
+      },
+      {
+        "before": ["]", "d"],
+        "commands": ["editor.action.marker.next"]
+      },
+      {
+        "before": ["<leader>", "c", "a"],
+        "commands": ["editor.action.quickFix"]
+      },
+      { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+      { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+      {
+        "before": ["g", "h"],
+        "commands": ["editor.action.showDefinitionPreviewHover"]
+      }
+    ],
+    "vim.visualModeKeyBindings": [
+      // Stay in visual mode while indenting
+      { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+      { "before": [">"], "commands": ["editor.action.indentLines"] },
+      // Move selected lines while staying in visual mode
+      { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+      { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+      // toggle comment selection
+      { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+    ],
+  
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+    },
+    "symbols.hidesExplorerArrows": false,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+  }
+  
